@@ -9,3 +9,6 @@
 An [example](https://github.com/homink/CTranslate2/blob/437086983733dec9d58f32674cec85d06bb535b3/python/tests/test_transformers.py#L948) is available for your experiment.
 
 We have in-house fine-tuned Japanese Wav2Vec2 model and observed GPU memory usage from 3060MB to 1897MB and xRT from 0.027 to 0.016 with [CTranslate2](https://github.com/OpenNMT/CTranslate2) 'int8' quantization.
+
+## Update 2024/09/09 
+All model inference processing moved from Pytorch to CTranslate2 (https://github.com/OpenNMT/CTranslate2/pull/1758) and now available at [CTranslate2 4.41.0](https://github.com/OpenNMT/CTranslate2/releases/tag/v4.4.0), showing the speend & memory gain.
